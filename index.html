@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+		<meta charset="utf-8" />
+
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="/images/favicon.ico">
+		<meta name="viewport" content="width=!, initial-scale=1.0">
+		<link rel="stylesheet" href="styles/slicknav.css">
+		<link rel="stylesheet" href="styles/normalize.css">
+		<link rel="stylesheet" href="styles/main.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Sigmar&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+ 
+		<!--Slicknav Links----------------------------------- -->
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+		<script src="js/jquery.slicknav.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+			$('#nav_menu').slicknav({prependTo:"#mobilemenu"});
+			});
+			</script>
+			
+
+	<title>World Baseball Classic</title>
+
+</head>
+
+<body>
+	<header class="clearfix">
+		<img src="images/wbc.jpg" alt="Logo Image">
+		<!-- <h2>World Baseball Classic</h2> -->
+		
+
+
+	</header>
+
+	<nav id="mobilemenu"></nav>
+	
+	<nav id="nav_menu">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<!-- <li><a href="cardio/index.html">Cardio</a></li> -->
+			<li>
+				<a href="Who/who.html">Who Plays</a>
+	
+			</li>
+			<li><a href="Where/where.html">Where its Played</a></li>
+			<li id="last">
+				<a href="Winners/winners.html">Winners</a>
+			</li>
+
+		</ul>
+	</nav>
+
+	<main>
+		<div id="words">
+			<section>
+				<h1>What is the World Baseball Classic?</h1>
+				<p>The World Baseball Classic, or WBC, is the top men's baseball international tournament. It lasts only 3 weeks and players from all over the world compete in the tournament for an opportunity to represent their country. It is run by Major League Baseball (MLB) and its Player Association, under the auspices of the sport's official global governing body for international competition, the World Baseball Softball Confederation (WBSC).
+				</p>
+			</section>
+			
+
+			<aside id="aside3">
+			<div class="container">
+				<div class="imagecarousel">
+					<div class="imagecarousel image fadeout"><img src="images/slideshow1.jpg" height="600px" width="800px" alt=""></div>
+					<div class="imagecarousel image fadeout"><img src="images/slideshow2.jpg" height="600px" width="800px" alt=""></div>
+					<div class="imagecarousel image fadeout"><img src="images/slideshow3.jpg" height="600px" width="800px" alt=""></div>
+					<div class="imagecarousel image fadeout"><img src="images/slideshow6.jpg" height="600px" width="800px" alt=""></div>
+					<div class="imagecarousel image fadeout"><img src="images/slideshow5.jpg" height="600px" width="800px" alt=""></div>
+					<div class="prev" onclick="showImage(-1)"><i class="fa-solid fa-chevrons-left"></i></div>
+				<div class="next" onclick="showImage(1)"><i class="fa-solid fa-chevrons-right"></i></div>
+				</div>
+			</div>
+
+			<div class="dots">
+				<span class="dot active"></span>
+				<span class="dot"></span>
+				<span class="dot"></span>
+				<span class="dot"></span>
+				<span class="dot"></span>
+			</div>
+			</aside>
+		</div>
+
+		<div class="container1">
+            <div class="digitalclock">
+                <h3 id="day">FRI</h3>
+                <h3 id="hour">04</h3>
+                <h3 id="colon1">:</h3>
+                <h3 id="minute">20</h3>
+                <h3 id="colon2">:</h3>
+                <h3 id="second">00</h3>
+                <h3 id="ampm">PM</h3>
+            </div>
+        </div>
+
+
+		
+	 <div><button onclick="topFunction()" id="cornerBtn" title="Go to top"><i class="fa-solid fa-angle-up"></i>
+	 </button></div>
+
+	</main>
+
+	<footer>
+		<p>&copy; <span id="copyright"></span> Nathan Innerfield</p>
+
+	</footer>
+	<script src="js/script.js"></script>
+</body>
+</html>
